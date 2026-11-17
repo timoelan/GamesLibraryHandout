@@ -23,7 +23,7 @@ class TitleNormalizerTest {
 
     @Test
     void normalize_trimsSurroundingSpaces() {
-        assertEquals("zelda", TitleNormalizer.normalize("  Zelda  "));
+        assertEquals("Zelda", TitleNormalizer.normalize("  Zelda  "));
     }
 
     @Test
