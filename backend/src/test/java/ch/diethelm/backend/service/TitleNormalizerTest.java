@@ -16,4 +16,10 @@ class TitleNormalizerTest {
         assertEquals("The Legend of Zelda", TitleNormalizer.normalize("The  Legend   of Zelda"));
     }
 
+    @Test
+    void normalize_capitalisesFirstLetter() {
+        assertEquals("Zelda", TitleNormalizer.normalize("zelda"));
+    }
+
+
 }
