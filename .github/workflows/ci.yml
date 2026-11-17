@@ -17,3 +17,8 @@ jobs:
       - name: Tests von ${{ matrix.service }}
         working-directory: ${{ matrix.service }}
         run: ./mvnw -B test
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "deploy"
